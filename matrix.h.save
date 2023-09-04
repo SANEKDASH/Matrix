@@ -1,0 +1,22 @@
+typedef struct
+{
+    size_t size_x = 0;
+    size_t size_y = 0;
+} MatrixSize;
+
+
+const size_t kSizeY = 5;
+
+const size_t kSizeX = 5;
+
+void StupidPrintMatrix(double matrix[kSizeY][kSizeX]);
+
+void CleverPrintMatrix(const double* matrix, const size_t size_y, const size_t size_x);
+
+void Multiply(const double *matrix_a,
+              const double *matrix_b,
+              double *matrix_c,
+              const size_t size_y,
+              const size_t size_x);
+              
+void PrintTriangleMatrix()
